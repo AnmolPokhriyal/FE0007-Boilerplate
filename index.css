@@ -1,0 +1,61 @@
+.ard {
+  display: flex;
+}
+
+img {
+  width: 30rem;
+}
+
+div {
+  padding: 1.5rem;
+}
+
+/* Iteration 1: Use an appropriate text-specific pseudo-element to selects the text currently highlighted by the cursor to "Blue". */
+::selection {
+  color: Blue;
+}
+
+h1 {
+  /* Iteration 2: Use a suitable property which sets the color of the foreground content of the selected elements to "red". */
+  color: red;
+  /* Iteration 3: Use an appropriate property which allows you to specify a font for the browser
+                  to apply to the selected elements to "Arial" .You can apply a font stack so that the browser
+                  has multiple fonts it can choose from*/
+  font-family: Arial, "Trebuchet MS", Courier New;
+  /* Iteration 4: USe an appropriate property to change the size of h1 to (3rem or 48px or 3em). */
+  font-size: 3em;
+  /* Iteration 5: Use a suitable CSS property to apply drop shadows (or multiple drop shadows) to your text. */
+  text-shadow: 4px 4px 5px black, 2px 2px 1px red;
+}
+
+em {
+  /* Iteration 6: Provide an appropriate CSS properties to alter the visual emphasis of text to
+                  (bold, oblique, underline dotted & transformation to none). */
+  font-weight: bold;
+  text-transform: none;
+  font-style: oblique;
+  text-decoration: underline dotted;
+}
+
+p {
+  /* Iteration 7: Give a suitable CSS property to set the height of each line of text to "1.5" */
+  line-height: 1.6;
+}
+
+.Conclusion {
+  padding: 5rem;
+  /* Iteration 8: Provide an appropriate CSS property to make text aligned to center */
+  text-align: center;
+}
+
+b{
+  /* Iteration 9: Set a suitable font properties through the shorthand property */
+font: italic normal bold normal 1em Helvetica, Arial, sans-serif;
+}
+
+footer {
+  font-family: fantasy;
+  /* Iteration 10: Provide an appropriate CSS property to make a spacing of "3px" & "4px" for letter & words respectivly */
+  letter-spacing: 3px;
+  word-spacing: 4px;
+}
